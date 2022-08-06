@@ -16,3 +16,19 @@ h1,
     font-size: rem(60px);
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Neucha', cursive;
+  line-height: 1.2em;
+}
