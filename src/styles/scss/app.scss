@@ -11,6 +11,8 @@ $blue: #1085c5;
 @import url('https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -42,6 +44,8 @@ h3 {font-size: 34px; }
 
 header {
   position: relative;
+  background-color: $light;
+  z-index: -3;
 }
 
 .two-columns {
@@ -51,7 +55,6 @@ header {
 }
 
 header::before {
-  z-index: -1;
   position: absolute;
   top: 0;
   left: 0;
@@ -62,6 +65,7 @@ header::before {
   background-size: cover;
   opacity: 0.1;
   content: url("/src/images/background.png");
+  z-index: -2;
 }
 
 header .content {
@@ -103,7 +107,7 @@ header h1 {
   }
 }
 
-
 p > a.button {
   margin-top: 40px;
 }
+

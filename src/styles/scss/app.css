@@ -2,6 +2,8 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -39,6 +41,8 @@ h3 {
 
 header {
   position: relative;
+  background-color: #f5f4f0;
+  z-index: -3;
 }
 
 .two-columns {
@@ -51,7 +55,6 @@ header {
 }
 
 header::before {
-  z-index: -1;
   position: absolute;
   top: 0;
   left: 0;
@@ -62,6 +65,7 @@ header::before {
   background-size: cover;
   opacity: 0.1;
   content: url("/src/images/background.png");
+  z-index: -2;
 }
 
 header .content {
