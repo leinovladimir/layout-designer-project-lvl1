@@ -1,2 +1,128 @@
-/** CSS STYLE **/
-@import url(/src/styles/scss/app.css);
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('./reset.css');
+
+:root {
+--white: #fff;
+--light: #f5f4f0;
+--white-50: #d7ccc0;
+--primary: #fe8a02;
+--primary-hover: #EA7600;
+--primary-dark: #42413c;
+--dark: #2a2626;
+--dark-50: #908d8b;
+--bown: #b09a81;
+--blue: #1085c5;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: --dark;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Neucha', cursive;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 { 
+    font-size: 60px; 
+}
+
+h3 {
+    font-size: 34px; 
+}
+
+.content {
+  width: 1110px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.two-columns {
+  display: flex;
+  gap: 30px;
+  columns: 2;
+}
+
+header,
+section {
+    position: relative;
+}
+
+.bg::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  content: url("/src/images/background.png");
+}
+
+.orange {
+  color: var(--primary);
+}
+
+/* HEADER */
+
+header {
+  position: relative;
+  background-color: var(--light);
+}
+
+header h1 {
+  margin-bottom: 185px;
+}
+
+header img {
+  position: absolute;
+  top: 55px;
+  right: -270px;
+  height: 512px;
+}
+
+.button {
+    display: flex;
+    width: fit-content;
+    font-weight: 700;
+    padding: 11px 23px;
+    background: --bown;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    }
+    
+.button.primary {   
+  background: var(--primary); 
+}
+
+.button.primary:hover {
+    background: var(--primary-hover);
+  }
+
+header p > a {
+  margin-top: 40px;
+}
+
+/* HOW-TO */
+.how-to {
+    text-align: center;
+}
