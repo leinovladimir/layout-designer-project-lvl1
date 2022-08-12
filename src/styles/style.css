@@ -48,13 +48,14 @@ h3 {
   position: relative;
 }
 
-p {
-    break-inside: avoid;
-}
-
 .two-columns {
   columns: 2;
   column-gap: 30px;
+}
+
+header .two-columns > .first-column {
+  margin-top: 0;
+  margin-bottom: 80px;
 }
 
 header,
