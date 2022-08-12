@@ -57,10 +57,6 @@ p {
   column-gap: 30px;
 }
 
-.left-column {
-    break-inside: avoid;
-}
-
 header,
 section {
     position: relative;
