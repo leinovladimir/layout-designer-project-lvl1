@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('./reset.css');
+/* @import url('./reset.css'); */
 
 :root {
 --white: #fff;
@@ -48,10 +48,17 @@ h3 {
   position: relative;
 }
 
+p {
+    break-inside: avoid;
+}
+
 .two-columns {
-  display: flex;
-  gap: 30px;
   columns: 2;
+  column-gap: 30px;
+}
+
+.left-column {
+    break-inside: avoid;
 }
 
 header,
@@ -113,7 +120,7 @@ header img {
     background: var(--primary-hover);
   }
 
-header p > a {
+header p ~ a {
   margin-top: 40px;
 }
 
