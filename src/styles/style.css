@@ -88,6 +88,8 @@ header {
 
 header h1 {
   margin-bottom: 185px;
+  position: relative;
+  z-index: 99;
 }
 
 header img {
