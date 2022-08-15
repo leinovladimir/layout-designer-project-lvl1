@@ -159,18 +159,19 @@ iframe.video {
   gap: 25px;
 }
 
-.nav h3 {
+.nav h2 {
   color: var(--white);
   font-size: 52px;
 }
 
 .card {
+  box-sizing: border-box;
   display: block;
   width: 350px;
   min-height: 325px;
-  padding: 24px;
 }
 
 a.card {
+  padding: 24px;
   background-color: var(--light);
 }
