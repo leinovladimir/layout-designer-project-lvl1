@@ -125,8 +125,9 @@ header p ~ a {
 }
 
 /* HOW-TO */
-.how-to {
+.how-to > .content {
     text-align: center;
+    padding-bottom: 0;
 }
 
 .how-to h2 {
@@ -139,4 +140,37 @@ header p ~ a {
 
 iframe.video {
       filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+      position: relative;
+      z-index: 99;
+      margin-bottom: -100px;
+    }
+
+/* Navigation */
+
+.nav {
+  background-color: var(--primary-dark);
+}
+
+.nav > .content {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.nav h3 {
+  color: var(--white);
+  font-size: 52px;
+}
+
+.card {
+  display: block;
+  width: 350px;
+  min-height: 325px;
+  padding: 24px;
+}
+
+a.card {
+  background-color: var(--light);
 }
