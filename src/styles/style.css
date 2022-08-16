@@ -172,7 +172,7 @@ iframe.video {
   box-sizing: border-box;
   display: block;
   width: 350px;
-  /* min-height: 340px; */
+  height: 326px;
 }
 
 a.card {
@@ -187,10 +187,6 @@ a.card {
   font-size: 64px;
   font-family: 'Neucha', cursive;
   line-height: 1em;
-}
-
-* {
-  transition: 0.1s all;
 }
 
 a.card:hover {
