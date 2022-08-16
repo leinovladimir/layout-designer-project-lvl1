@@ -172,7 +172,7 @@ iframe.video {
   box-sizing: border-box;
   display: block;
   width: 350px;
-  min-height: 325px;
+  /* min-height: 340px; */
 }
 
 a.card {
