@@ -164,6 +164,10 @@ iframe.video {
   font-size: 52px;
 }
 
+.nav h3 {
+  color: var(--primary);
+}
+
 .card {
   box-sizing: border-box;
   display: block;
@@ -173,5 +177,28 @@ iframe.video {
 
 a.card {
   padding: 24px;
+  color: var(--dark);
   background-color: var(--light);
+  text-decoration: none;
+}
+
+.num {
+  padding-bottom: 40px;
+  font-size: 64px;
+  font-family: 'Neucha', cursive;
+  line-height: 1em;
+}
+
+* {
+  transition: 0.1s all;
+}
+
+a.card:hover {
+  color: var(--light);
+  background-color: var(--primary);
+}
+
+a.card:hover > * {
+    color: var(--light);
+
 }
