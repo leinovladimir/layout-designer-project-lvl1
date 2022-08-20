@@ -59,6 +59,10 @@ header .two-columns > .first-column {
   margin-bottom: 80px;
 }
 
+.first-column {
+  margin-top: 0;
+}
+
 header,
 section {
     position: relative;
