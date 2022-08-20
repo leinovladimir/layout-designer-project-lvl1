@@ -60,6 +60,8 @@ header .two-columns > .first-column {
 }
 
 .first-column {
+  break-inside: avoid-column;
+  break-after: always;
   margin-top: 0;
 }
 
@@ -202,7 +204,7 @@ a.card:hover > * {
     color: var(--light);
 }
 
-section .bg {
+.bg {
   background-color: var(--light);
 }
 .two-rows {
