@@ -211,7 +211,8 @@ section .bg {
   gap: 30px;
 }
 
-.two-rows > .text {
+.two-rows .text {
+  width: 500px;
   font-family: 'Neucha', cursive;
 }
 
@@ -226,7 +227,7 @@ section .bg {
 }
 
 .two-rows h2 {
-  font-size: 72px;
+  font-size: 60px;
   margin-top: 0px;
 }
 
