@@ -248,3 +248,20 @@ section .plank {
   color: var(--light);
   text-transform: uppercase;
 }
+.bg-dark {
+  background-color: var(--bown);
+  color: var(--white);
+}
+
+.bg-dark .two-rows {
+  flex-direction: row-reverse;
+}
+
+.bg-dark p.small {
+   color: var(--white-50);
+}
+
+.bg-dark .plank {
+  background-color: var(--white);
+  color: var(--bown);
+}
