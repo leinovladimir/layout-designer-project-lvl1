@@ -202,7 +202,7 @@ a.card:hover > * {
     color: var(--light);
 }
 
-section#ikea-effect {
+section .bg {
   background-color: var(--light);
 }
 .two-rows {
