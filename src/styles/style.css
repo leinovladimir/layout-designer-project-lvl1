@@ -27,7 +27,7 @@ h2,
 h3 {
   margin: 0;
   font-weight: 400;
-  font-family: "Neucha", cursive;
+  font-family: Neucha, cursive;
   line-height: 1.2em;
 }
 
@@ -51,6 +51,12 @@ h3 {
   padding-bottom: 100px;
 }
 
+.first-column {
+  break-inside: avoid-column;
+  break-after: always;
+  margin-top: 0;
+}
+
 .two-columns {
   columns: 2;
   column-gap: 30px;
@@ -58,12 +64,6 @@ h3 {
 
 header .two-columns > .first-column {
   margin-bottom: 80px;
-}
-
-.first-column {
-  break-inside: avoid-column;
-  break-after: always;
-  margin-top: 0;
 }
 
 header,
@@ -161,7 +161,6 @@ iframe.video {
 .nav > .container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   gap: 30px;
   padding-top: 200px;
 }
@@ -192,7 +191,7 @@ a.card {
 .num {
   padding-bottom: 40px;
   font-size: 64px;
-  font-family: "Neucha", cursive;
+  font-family: Neucha, cursive;
   line-height: 1em;
 }
 
@@ -217,7 +216,7 @@ a.card:hover > * {
 
 .two-rows .text {
   width: 500px;
-  font-family: "Neucha", cursive;
+  font-family: Neucha, cursive;
 }
 
 .two-rows img {
@@ -280,7 +279,7 @@ section .plank {
 
 .form-box a { color: var(--white); }
 
-footer h2 {
+footer .container h2 {
   box-sizing: content-box;
   width: 425px;
   padding: 55px;
