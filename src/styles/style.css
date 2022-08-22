@@ -1,53 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+
 /* @import url('./reset.css'); */
 
 :root {
---white: #fff;
---light: #f5f4f0;
---white-50: #d7ccc0;
---primary: #fe8a02;
---primary-hover: #EA7600;
---primary-dark: #42413c;
---dark: #2a2626;
---dark-50: #908d8b;
---bown: #b09a81;
---blue: #1085c5;
+  --white: #fff;
+  --light: #f5f4f0;
+  --white-50: #d7ccc0;
+  --primary: #fe8a02;
+  --primary-hover: #ea7600;
+  --primary-dark: #42413c;
+  --dark: #2a2626;
+  --dark-50: #908d8b;
+  --bown: #b09a81;
+  --blue: #1085c5;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.6em;
   color: var(--dark);
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6em;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Neucha', cursive;
-  line-height: 1.2em;
-  font-weight: 400;
   margin: 0;
+  font-weight: 400;
+  font-family: "Neucha", cursive;
+  line-height: 1.2em;
 }
 
 h1 {
   font-size: 72px;
 }
 
-h2 { 
-    font-size: 60px; 
+h2 {
+  font-size: 60px;
 }
 
 h3 {
-    font-size: 34px; 
+  font-size: 34px;
 }
 
 .container {
+  position: relative;
   width: 1110px;
   margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 100px;
-  position: relative;
 }
 
 .two-columns {
@@ -67,7 +68,7 @@ header .two-columns > .first-column {
 
 header,
 section {
-    position: relative;
+  position: relative;
 }
 
 .bg::before {
@@ -95,9 +96,9 @@ header {
 }
 
 header h1 {
-  margin-bottom: 185px;
   position: relative;
   z-index: 99;
+  margin-bottom: 185px;
 }
 
 header img {
@@ -108,23 +109,23 @@ header img {
 }
 
 .button {
-    display: flex;
-    width: fit-content;
-    font-weight: 700;
-    padding: 11px 23px;
-    background: var(--bown);
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    }
-    
-.button.primary {   
-  background: var(--primary); 
+  display: flex;
+  width: fit-content;
+  padding: 11px 23px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: var(--bown);
+}
+
+.button.primary {
+  background: var(--primary);
 }
 
 .button.primary:hover {
-    background: var(--primary-hover);
-  }
+  background: var(--primary-hover);
+}
 
 header p ~ a {
   margin-top: 40px;
@@ -132,24 +133,24 @@ header p ~ a {
 
 /* HOW-TO */
 .how-to > .container {
-    text-align: center;
-    padding-bottom: 0;
+  padding-bottom: 0;
+  text-align: center;
 }
 
 .how-to h2 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .how-to p {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 iframe.video {
-      filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-      position: relative;
-      z-index: 99;
-      margin-bottom: -100px;
-    }
+  position: relative;
+  z-index: 99;
+  margin-bottom: -100px;
+  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
+}
 
 /* Navigation */
 
@@ -158,11 +159,11 @@ iframe.video {
 }
 
 .nav > .container {
-  padding-top: 200px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
+  padding-top: 200px;
 }
 
 .nav h2 {
@@ -175,8 +176,8 @@ iframe.video {
 }
 
 .card {
-  box-sizing: border-box;
   display: block;
+  box-sizing: border-box;
   width: 350px;
   height: 326px;
 }
@@ -184,14 +185,14 @@ iframe.video {
 a.card {
   padding: 24px;
   color: var(--dark);
-  background-color: var(--light);
   text-decoration: none;
+  background-color: var(--light);
 }
 
 .num {
   padding-bottom: 40px;
   font-size: 64px;
-  font-family: 'Neucha', cursive;
+  font-family: "Neucha", cursive;
   line-height: 1em;
 }
 
@@ -201,12 +202,13 @@ a.card:hover {
 }
 
 a.card:hover > * {
-    color: var(--light);
+  color: var(--light);
 }
 
 .bg {
   background-color: var(--light);
 }
+
 .two-rows {
   display: flex;
   flex-direction: row;
@@ -215,22 +217,22 @@ a.card:hover > * {
 
 .two-rows .text {
   width: 500px;
-  font-family: 'Neucha', cursive;
+  font-family: "Neucha", cursive;
 }
 
 .two-rows img {
-  filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
 
 .two-rows p.small {
-  font-size: 24px;
   margin: 0;
   color: var(--dark-50);
+  font-size: 24px;
 }
 
 .two-rows h2 {
+  margin-top: 0;
   font-size: 60px;
-  margin-top: 0px;
 }
 
 .two-rows p {
@@ -240,20 +242,21 @@ a.card:hover > * {
 
 section .plank {
   display: block;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  padding: 5px;
-  padding-left: 1em;
   margin-top: 100px;
   margin-bottom: 20px;
-  font-weight: 700;
-  background-color: var(--bown);
+  padding: 5px;
+  padding-left: 1em;
   color: var(--light);
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
-}
-.bg-dark {
   background-color: var(--bown);
+}
+
+.bg-dark {
   color: var(--white);
+  background-color: var(--bown);
 }
 
 .bg-dark .two-rows {
@@ -261,43 +264,41 @@ section .plank {
 }
 
 .bg-dark p.small {
-   color: var(--white-50);
+  color: var(--white-50);
 }
 
 .bg-dark .plank {
-  background-color: var(--white);
   color: var(--bown);
+  background-color: var(--white);
 }
 
 .form-box {
-  background-color: var(--primary-dark);
-  color: var(--white);
   display: flex;
+  color: var(--white);
+  background-color: var(--primary-dark);
 }
 
 .form-box a { color: var(--white); }
 
-
 footer h2 {
-  font-size: 34px;
-  padding: 55px;
   box-sizing: content-box;
   width: 425px;
+  padding: 55px;
+  font-size: 34px;
 }
 
 footer .text-center {
-  text-align: center;
   margin-top: 76px;
+  text-align: center;
 }
 
 footer form {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    padding-right: 55px;
-    justify-content: center;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 55px;
 }
-
 
 form .component {
   display: flex;
@@ -305,9 +306,9 @@ form .component {
 }
 
 form input {
+  flex-grow: 1;
   box-sizing: border-box;
   height: 50px;
-  flex-grow: 1;
   padding: 15px;
   border: 0;
   border-radius: 0;
@@ -315,17 +316,17 @@ form input {
 
 footer button {
   position: relative;
-  border: 0;
-  cursor: pointer;
   width: 70px;
-  background-color: var(--primary);
   height: 50px;
+  background-color: var(--primary);
+  border: 0;
   border-radius: 0;
+  cursor: pointer;
 }
 
 button::after {
   position: absolute;
-  content: url('../images/send.svg');
+  content: url("../images/send.svg");
   transform: translateY(-50%) translateX(-50%);
 }
 
