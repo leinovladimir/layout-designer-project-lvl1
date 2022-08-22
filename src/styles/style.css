@@ -296,8 +296,8 @@ footer .text-center {
 
 footer form {
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
+  flex-grow: 1;
   justify-content: center;
   padding-right: 55px;
 }
