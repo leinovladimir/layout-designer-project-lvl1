@@ -43,6 +43,10 @@ h3 {
   font-size: 34px;
 }
 
+div > img {
+  vertical-align: middle;
+}
+
 .container {
   position: relative;
   width: 1110px;
