@@ -42,7 +42,7 @@ h3 {
     font-size: 34px; 
 }
 
-.content {
+.container {
   width: 1110px;
   margin: 0 auto;
   padding-top: 100px;
@@ -131,7 +131,7 @@ header p ~ a {
 }
 
 /* HOW-TO */
-.how-to > .content {
+.how-to > .container {
     text-align: center;
     padding-bottom: 0;
 }
@@ -157,7 +157,7 @@ iframe.video {
   background-color: var(--primary-dark);
 }
 
-.nav > .content {
+.nav > .container {
   padding-top: 200px;
   display: flex;
   flex-direction: row;
@@ -267,4 +267,68 @@ section .plank {
 .bg-dark .plank {
   background-color: var(--white);
   color: var(--bown);
+}
+
+.form-box {
+  background-color: var(--primary-dark);
+  color: var(--white);
+  display: flex;
+}
+
+.form-box a { color: var(--white); }
+
+
+footer h2 {
+  font-size: 34px;
+  padding: 55px;
+  box-sizing: content-box;
+  width: 425px;
+}
+
+footer .text-center {
+  text-align: center;
+  margin-top: 76px;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-right: 55px;
+    justify-content: center;
+}
+
+
+form .component {
+  display: flex;
+  margin-top: 9px;
+}
+
+form input {
+  box-sizing: border-box;
+  height: 50px;
+  flex-grow: 1;
+  padding: 15px;
+  border: 0;
+  border-radius: 0;
+}
+
+footer button {
+  position: relative;
+  border: 0;
+  cursor: pointer;
+  width: 70px;
+  background-color: var(--primary);
+  height: 50px;
+  border-radius: 0;
+}
+
+button::after {
+  position: absolute;
+  content: url('../images/send.svg');
+  transform: translateY(-50%) translateX(-50%);
+}
+
+footer button:hover {
+  background-color: var(--primary-hover);
 }
