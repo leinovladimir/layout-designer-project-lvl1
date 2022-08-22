@@ -308,8 +308,8 @@ form .component {
 }
 
 form input {
-  flex-grow: 1;
   box-sizing: border-box;
+  flex-grow: 1;
   height: 50px;
   padding: 15px;
   border: 0;
@@ -328,8 +328,8 @@ footer button {
 
 button::after {
   position: absolute;
-  content: url("../images/send.svg");
   transform: translateY(-50%) translateX(-50%);
+  content: url("../images/send.svg");
 }
 
 footer button:hover {
