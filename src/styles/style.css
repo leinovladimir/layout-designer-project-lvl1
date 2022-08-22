@@ -308,8 +308,8 @@ form .component {
 }
 
 form input {
-  box-sizing: border-box;
   flex-grow: 1;
+  box-sizing: border-box;
   height: 50px;
   padding: 15px;
   border: 0;
